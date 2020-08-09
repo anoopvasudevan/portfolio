@@ -1,0 +1,110 @@
+.Contact {
+  /* all section dimensions can be put in App ? */
+  height: 100vh;
+  width: 100%;
+  /* padding-top: 50px; */
+  color: var(--primary-font-color);
+}
+
+.Contact .Heading {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 300;
+  font-size: 3rem;
+  padding: 20px 0;
+  color: var(--main-heading-color);
+}
+
+.Form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.Form:hover {
+  box-shadow: 1px 1px 5px -1px var(--brand-color);
+}
+
+.FormItem {
+  margin-bottom: 20px;
+  padding: 5px 10px;
+  font-family: inherit;
+  resize: none;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--brand-color);
+  background-color: var(--layout-bg-color);
+  color: var(--primary-font-color);
+  font-size: 1rem;
+}
+
+.FormItem:focus {
+  outline: none;
+}
+
+.FormButton {
+  margin-top: 10px;
+  /* align-self: center; */
+  letter-spacing: 2px;
+  cursor: pointer;
+  color: var(--primary-font-color);
+  text-transform: uppercase;
+  border: 1px solid var(--brand-color);
+  transition: background-color 350ms ease;
+}
+
+.FormButton:hover {
+  background-color: var(--brand-color);
+  color: var(--secondary-font-color);
+  font-weight: 700;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #333 inset !important;
+  color: white;
+}
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: white !important;
+}
+
+.MediaLinks {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.MediaLinks a {
+  color: var(--priary-text-color);
+  text-decoration: none;
+  padding: 20px;
+  font-size: 30px;
+  /* width: 50px; */
+  text-align: center;
+  transition: all 0.4s ease;
+}
+
+.MediaLinks .Instagram:hover {
+  color: #bc2a8d;
+  transform: scale(1.2, 1.2);
+}
+
+.MediaLinks .LinkedIn:hover {
+  color: #007bb6;
+  transform: scale(1.2, 1.2);
+}
+
+.MediaLinks .GitHub:hover {
+  color: #c9510c;
+  transform: scale(1.2, 1.2);
+}
+
+.MediaLinks .Gmail:hover {
+  color: #ffd119;
+  transform: scale(1.2, 1.2);
+}

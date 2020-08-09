@@ -1,0 +1,15 @@
+.AllProjects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Projects .Heading {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 300;
+  font-size: 3rem;
+  padding: 20px 0;
+  color: var(--main-heading-color);
+}

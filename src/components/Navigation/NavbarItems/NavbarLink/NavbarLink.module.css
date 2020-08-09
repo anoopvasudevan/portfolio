@@ -1,0 +1,63 @@
+.NavbarLink {
+  width: 100%;
+}
+
+.NavbarLink a {
+  text-decoration: none;
+  color: var(--primary-font-color);
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  border-bottom: 3px solid transparent;
+}
+
+/* .NavbarLink a:hover,
+.NavbarLink a:active,
+.NavbarLink a.active {
+  border: none;
+  border-left: 3px solid var(--brand-color);
+  background-color: var(--brand-color);
+} */
+
+@media (min-width: 500px) {
+  .NavbarLink {
+    height: 100%;
+    width: 100px;
+    /* display: block; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .NavbarLink a {
+    color: var(--primary-font-color);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    transition: background-color 350ms ease;
+    border-bottom: 3px solid transparent;
+  }
+
+  .NavbarLink a:hover {
+    background-color: var(--brand-color);
+    color: var(--navbar-on-hover-text-color);
+  }
+
+  .NavbarLink a:active,
+  .NavbarLink a.active {
+    border: none;
+    border-bottom: 3px solid var(--brand-color);
+    background-color: var(--navbar-bg-color);
+    color: var(--primary-font-color);
+  }
+
+  .NavbarLink a.Scrolled {
+    color: white;
+    background-color: var(--navbar-scrolled-bg-color);
+  }
+}
