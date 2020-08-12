@@ -1,6 +1,3 @@
-/* html, body {
-  height: 100%;
-} */
 html,
 body,
 #root,
@@ -15,9 +12,7 @@ body,
   --brand-color: #00c6cf;
   --brand-color-bold: #068488;
 
-  /* --navbar-scrolled-bg-color: var(--brand-color-bold); */
   --navbar-scrolled-bg-color: #2c2c2c;
-  /* --projects-bg-color: #1fa1a8; */
   --projects-bg-color: #2c2c2c;
 
   --layout-bg-color: var(--theme-color-bg);
