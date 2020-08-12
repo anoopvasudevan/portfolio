@@ -1,4 +1,5 @@
 .AllProjects {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,4 +13,5 @@
   font-size: 3rem;
   padding: 20px 0;
   color: var(--main-heading-color);
+  text-align: center;
 }

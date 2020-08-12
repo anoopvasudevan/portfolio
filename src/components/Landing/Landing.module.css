@@ -1,79 +1,47 @@
 .Landing {
-  /* height: 100%; */
-  width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  padding: 10% 0;
+  min-height: calc(100vh - var(--navbar-height));
+  /* min-height: 100vh; */
 }
 
-.ProfilePic {
-  margin-top: 10%;
-  flex-grow: 1;
-  order: 2;
-}
-
-.ProfilePic div {
-  position: relative;
-  max-width: 500px;
-  min-width: 300px;
-}
-
-.ProfilePic img {
+.Landing .MainDiv {
+  height: 80%;
   width: 100%;
-}
-
-.ProfilePic div::before {
-  content: "";
-  position: absolute;
-  left: -10px;
-  top: -10px;
-  /* width: 100%;
-  height: 100%; */
-  width: 50px;
-  height: 50px;
-  border-top: 3px solid var(--brand-color);
-  border-left: 3px solid var(--brand-color);
-}
-
-.ProfilePic div::after {
-  content: "";
-  position: absolute;
-  right: -10px;
-  bottom: -10px;
-  width: 50px;
-  height: 50px;
-  border-bottom: 3px solid var(--brand-color);
-  border-right: 3px solid var(--brand-color);
-}
-
-.IntroText {
-  color: var(--primary-font-color);
-  flex-grow: 2;
-  order: 1;
-  align-self: flex-start;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  width: 100%;
-
-  margin-left: 0;
 }
 
-.IntroText h1,
-.LandingTechRole {
+.ProfilePicDiv {
+  flex-basis: 50%;
+  margin-left: 5%;
+  order: 1;
+}
+
+.ProfilePicDiv img {
+  max-width: 100%;
+  max-height: 100%;
+  min-width: 300px;
+  filter: grayscale(1);
+}
+
+.IntroDiv {
+  flex-basis: 50%;
+  margin: 0 2% 0 5%;
+  order: 2;
+  color: var(--theme-color-font);
+}
+
+.IntroDiv h1,
+h3 {
   margin: 0;
-  width: 100%;
-  padding: 10px 0;
-  text-align: left;
+  line-height: 4rem;
 }
 
-.IntroText h1:nth-of-type(1) {
+.IntroDiv h1:nth-of-type(1) {
   font-size: 3rem;
 }
 
-.IntroText h1:nth-of-type(1) span {
+.IntroDiv h1:nth-of-type(1) span {
   display: inline-block;
   height: 3px;
   width: 3px;
@@ -83,53 +51,70 @@
   margin-left: 2px;
 }
 
-.IntroText h1:nth-of-type(2) {
+.IntroDiv h1:nth-of-type(2) {
   font-size: 2rem;
 }
 
-.IntroText h1:nth-of-type(3) {
-  font-size: 3rem;
+.IntroDiv h1:nth-of-type(3) {
+  line-height: 3.5rem;
+  font-size: 3.5rem;
   text-transform: capitalize;
 }
 
-.IntroText h1:nth-of-type(3) span {
+.IntroDiv h1:nth-of-type(3) span {
   color: var(--brand-color);
 }
 
-.IntroText .LandingTechRole {
+.IntroDiv .LandingTechRole {
   font-weight: 400;
 }
 
-@media (min-width: 800px) {
+@media screen and (max-width: 840px) {
   .Landing {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    /* justify-content: space-around; */
-    align-items: center;
-    position: relative;
+    align-items: flex-start;
+    height: 100%;
   }
 
-  .ProfilePic {
-    margin-top: 0;
-    min-width: 300px;
-    flex-grow: 1;
-    order: 1;
-    align-self: flex-start;
+  .Landing .MainDiv {
+    flex-direction: column;
   }
 
-  .IntroText {
-    /* width: 50%; */
-    flex-grow: 2;
-    /* width: fit-content; */
-    align-self: flex-start;
-    color: var(--primary-font-color);
+  .ProfilePicDiv {
+    margin: 0 auto;
+    margin-top: 5%;
     order: 2;
-    margin-left: 10%;
   }
 
-  .ProfilePic img {
+  .ProfilePicDiv img {
     width: 100%;
+    min-width: 200px;
+  }
+
+  .IntroDiv {
+    order: 1;
+    margin-top: 5%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .IntroDiv h1,
+  h3 {
+    line-height: 3rem;
+  }
+
+  .IntroDiv h1:nth-of-type(1) {
+    font-size: 2rem;
+  }
+
+  .IntroDiv h1:nth-of-type(2) {
+    font-size: 1rem;
+  }
+
+  .IntroDiv h1:nth-of-type(3) {
+    font-size: 2.5rem;
+  }
+
+  .IntroDiv h3 {
+    font-size: 1rem;
   }
 }

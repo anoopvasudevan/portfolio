@@ -1,0 +1,64 @@
+.NavbarItems {
+  width: var(--main-content-width);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.NavbarItemsLeft {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  min-height: 56px;
+  height: 56px;
+}
+
+.NavbarItemsRight {
+  display: none;
+  /* flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: gray;
+  height: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 5s ease; */
+}
+
+.NavbarItemsRightActive {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s ease; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--layout-bg-color);
+  height: 150px;
+ 
+}
+
+@media (min-width: 500px) {
+  .NavbarItems {
+    width: var(--main-content-width);
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .NavbarItemsLeft {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .NavbarItemsRight {
+    display: flex;
+    flex-direction: row;
+    height: 56px;
+    flex-grow: 1;
+    justify-content: flex-end;
+  }
+}

@@ -32,26 +32,27 @@ const skillSet = [
 
 const About = () => {
   return (
-    <div className={classes.About}>
-      <section className={classes.Info}>
+    <section className={classes.About}>
+      <div className={classes.Info}>
         <h1>
           <span>ABOUT ME</span>, my <a href="#skillset">SKILLSET</a> and{" "}
           <a href="#experience">EXPERIENCE</a>
         </h1>
         My name is <span id="name">Anoop Vasudevan</span> and I am a full-stack
         developer.
-      </section>
+      </div>
 
-      <section id="skillset" className={classes.Skills}>
-        <h1 className={classes.Heading}>SKILLSET</h1>
+      <h1 className={classes.Heading}>SKILLSET</h1>
+      
+      <div className={classes.Skills}>
         <SkillItems skillSet={skillSet} />
-      </section>
+      </div>
 
       {/* <section id="experience" className={classes.Skills}>
         <h3 className={classes.Heading}>EXPERIENCE</h3>
         <SkillItems />
       </section> */}
-    </div>
+    </section>
   );
 };
 

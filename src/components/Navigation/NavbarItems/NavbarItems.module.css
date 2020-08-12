@@ -1,66 +1,65 @@
 .NavbarItems {
-  width: 80%;
+  width: var(--main-content-width);
+  height: 100%;
+  max-width: 1200px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
-  /* position: fixed;
-  z-index: 200; */
+  align-items: center;
+  background-color: inherit;
 }
 
 .NavbarItemsLeft {
-  flex-grow: 1;
+  height: 100%;
   display: flex;
   justify-content: space-between;
-  min-height: 56px;
-  height: 56px;
+  background-color: inherit;
 }
 
 .NavbarItemsRight {
-  display: none;
-  /* flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  background-color: gray;
-  height: 0;
-  visibility: hidden;
-  opacity: 0;
-  transition: all 5s ease; */
-}
-
-.NavbarItemsRightActive {
-  visibility: visible;
-  opacity: 1;
-  transition: 0.5s ease; 
+  height: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--layout-bg-color);
-  height: 150px;
- 
+  justify-content: flex-end;
+  background-color: inherit;
 }
 
-@media (min-width: 500px) {
+@media screen and (max-width: 500px) {
   .NavbarItems {
-    width: 80%;
-    max-width: 1200px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .NavbarItem {
+    width: 100%;
   }
 
   .NavbarItemsLeft {
-    flex-grow: 1;
-    display: flex;
-    justify-content: space-between;
+    height: var(--navbar-height);
+    width: 100%;
+    padding: 0 5%;
   }
 
   .NavbarItemsRight {
-    display: flex;
-    flex-direction: row;
-    height: 56px;
-    flex-grow: 1;
-    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    transform: scale(1, 0);
+    transition: transform 350ms ease-in-out;
+    transform-origin: top;
+  }
+
+  .NavbarItemsRightActive {
+    transform: scale(1, 1);
+  }
+
+  .NavbarItemsRight .NavbarItem {
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
+  }
+
+  .NavbarItemsRightActive .NavbarItem {
+    opacity: 1;
+    transition: opacity 200ms ease-in-out 200;
   }
 }

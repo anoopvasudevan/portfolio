@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import * as emailjs from "emailjs-com";
 
 import classes from "./Contact.module.css";
+import SocialMediaLinks from "../../components/SocialMediaLinks/SocialMediaLinks";
 
 const Contact = () => {
   const initialState = {
@@ -82,8 +83,9 @@ const Contact = () => {
         </button>
       </form>
       <br />
-      <h3>Connect with me</h3>
-      <div className={classes.MediaLinks}>
+      <h3 className={classes.MediaLinksHeading}>Connect with me</h3>
+      <SocialMediaLinks />
+      {/* <div className={classes.MediaLinks}>
         <a
           className={classes.Instagram}
           href="https://www.instagram.com/anoopvasu2015/"
@@ -99,7 +101,7 @@ const Contact = () => {
         <a className={classes.Gmail} href="/">
           <span className="far fa-envelope"></span>
         </a>
-      </div>
+      </div> */}
     </div>
   );
 };

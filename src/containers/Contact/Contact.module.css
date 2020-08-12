@@ -1,9 +1,8 @@
 .Contact {
-  /* all section dimensions can be put in App ? */
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
-  /* padding-top: 50px; */
   color: var(--primary-font-color);
+  text-align: center;
 }
 
 .Contact .Heading {
@@ -56,7 +55,7 @@
 }
 
 .FormButton:hover {
-  background-color: var(--brand-color);
+  background-color: var(--brand-color-bold);
   color: var(--secondary-font-color);
   font-weight: 700;
 }
@@ -73,8 +72,11 @@ input:-webkit-autofill {
   -webkit-text-fill-color: white !important;
 }
 
-.MediaLinks {
-  margin-top: 20px;
+.MediaLinksHeading {
+  font-weight: 400;
+}
+
+/* .MediaLinks {
   display: flex;
   justify-content: center;
 }
@@ -84,7 +86,6 @@ input:-webkit-autofill {
   text-decoration: none;
   padding: 20px;
   font-size: 30px;
-  /* width: 50px; */
   text-align: center;
   transition: all 0.4s ease;
 }
@@ -107,4 +108,4 @@ input:-webkit-autofill {
 .MediaLinks .Gmail:hover {
   color: #ffd119;
   transform: scale(1.2, 1.2);
-}
+} */

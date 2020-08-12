@@ -1,0 +1,16 @@
+.Footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 20%; */
+    background-color: var(--projects-bg-color);
+    color: var(--primary-font-color);
+}
+
+.FooterCopyright {
+    margin: 1em 0 2em;
+    font-size: 0.8rem;
+
+}

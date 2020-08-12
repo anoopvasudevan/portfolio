@@ -1,0 +1,33 @@
+.SocialMediaLinks {
+  display: flex;
+  justify-content: center;
+}
+
+.SocialMediaLinks a {
+  color: var(--priary-text-color);
+  text-decoration: none;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  transition: all 0.4s ease;
+}
+
+.SocialMediaLinks .Instagram:hover {
+  color: #bc2a8d;
+  transform: scale(1.2, 1.2);
+}
+
+.SocialMediaLinks .LinkedIn:hover {
+  color: #007bb6;
+  transform: scale(1.2, 1.2);
+}
+
+.SocialMediaLinks .GitHub:hover {
+  color: #c9510c;
+  transform: scale(1.2, 1.2);
+}
+
+.SocialMediaLinks .Gmail:hover {
+  color: #ffd119;
+  transform: scale(1.2, 1.2);
+}

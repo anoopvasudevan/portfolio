@@ -8,12 +8,50 @@
   align-items: center;
   cursor: pointer;
   box-sizing: border-box;
+  
 }
+
 
 .ToggleButton span {
   width: 90%;
-  border: 2px solid var(--brand-color);
+  height: 4px;
+  background-color: var(--brand-color);
   border-radius: 2px;
+  transition: all 300ms ease;
+  position: relative;
+  /* outline: 1px solid red; */
+}
+
+.ToggleButton span::before,
+.ToggleButton span::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--brand-color);
+  border-radius: 2px;
+  position: absolute;
+  transition: all 500ms ease;
+}
+
+.ToggleButton span::before {
+  top: -10px;
+}
+
+.ToggleButton span::after {
+  top: 10px;
+}
+
+.ToggleButton.Rotate span {
+  transform:  rotate(45deg);
+}
+.ToggleButton.Rotate span::before{
+  opacity: 0;
+}
+
+.ToggleButton.Rotate span:after {
+  transform: translateY(-10px) rotate(-90deg);
+  
 }
 
 @media (min-width: 500px) {

@@ -4,13 +4,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* border: 1px solid aqua; */
   overflow: hidden;
   border-radius: 20px;
+  text-align: center;
 }
 
-.Project .ProjectHeading {
-  /* color: blue */
+.ProjectHeading {
+  font-size: 1.5rem;
 }
 
 .ProjectInfo {
@@ -20,7 +20,6 @@
   box-sizing: border-box;
   padding: 20px;
   color: var(--secondary-font-color);
-  /* border: 1px solid red; */
   background-color: var(--projects-bg-color);
 }
 
@@ -46,13 +45,14 @@
   height: 300px;
   object-fit: cover;
   object-position: top;
-  /* filter: grayscale(100); */
+  display: block;
 }
 
 .ProjectSnapshot:hover img {
-  /* filter: grayscale(100%); */
   filter: contrast(1);
 }
+
+
 
 @media (min-width: 950px) {
   .Project {
@@ -62,7 +62,6 @@
     height: 400px;
     max-width: 1200px;
     margin-bottom: 0;
-    /* border: 1px solid aqua; */
     border-radius: 0;
   }
 
@@ -78,7 +77,6 @@
     flex-grow: 1;
     padding: 20px;
     box-sizing: border-box;
-    /* border: 1px solid red; */
     background-color: var(--projects-bg-color);
   }
 

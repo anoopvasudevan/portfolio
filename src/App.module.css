@@ -1,0 +1,8 @@
+
+
+.MainPageContent {
+  width: var(--main-content-width);
+  max-width: 1200px;
+  margin: 56px auto 0 auto;
+  padding-top: 20px;
+}

@@ -7,42 +7,40 @@ import NavbarLink from "./NavbarLink/NavbarLink";
 
 const NavbarItems = (props) => {
   return (
-    <div className={classes.NavbarItems}>
+    <div
+      className={classes.NavbarItems}
+      // onClick={props.showNavLinks ? props.drawerClicked : undefined}
+    >
       <div className={classes.NavbarItemsLeft}>
-        <ToggleButton clicked={props.toggleButtonClicked} />
+        <ToggleButton
+          clicked={props.toggleButtonClicked}
+          showNavLinks={props.showNavLinks}
+        />
         <NavbarBrand />
       </div>
       <div
-        className={
-          props.showNavLinks
-            ? classes.NavbarItemsRightActive
-            : classes.NavbarItemsRight
-        }
+        className={`${classes.NavbarItemsRight} ${
+          props.showNavLinks && classes.NavbarItemsRightActive
+        }`}
         onClick={props.showNavLinks ? props.drawerClicked : undefined}
       >
-        {/* <div className={classes.NavbarItemsRight}> */}
-        {/* <div className={classes.NavbarItemsRightActive}> */}
-        <NavbarLink
-          link="/about"
-          className={classes.NavbarItem}
-          scrolled={props.scrolled}
-        >
-          About
-        </NavbarLink>
-        <NavbarLink
-          link="/projects"
-          className={classes.NavbarItem}
-          scrolled={props.scrolled}
-        >
-          Projects
-        </NavbarLink>
-        <NavbarLink
-          link="/contact"
-          className={classes.NavbarItem}
-          scrolled={props.scrolled}
-        >
-          Contact
-        </NavbarLink>
+        <div className={classes.NavbarItem}>
+          <NavbarLink link="/about" scrolled={props.scrolled}>
+            About
+          </NavbarLink>
+        </div>
+
+        <div className={classes.NavbarItem}>
+          <NavbarLink link="/projects" scrolled={props.scrolled}>
+            Projects
+          </NavbarLink>
+        </div>
+
+        <div className={classes.NavbarItem}>
+          <NavbarLink link="/contact" scrolled={props.scrolled}>
+            Contact
+          </NavbarLink>
+        </div>
       </div>
     </div>
   );
