@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.3de7adf7.chunk.css",
+    "main.js": "/portfolio/static/js/main.807fb488.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.807fb488.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.255623fe.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.255623fe.js.map",
+    "static/js/2.1c46a314.chunk.js": "/portfolio/static/js/2.1c46a314.chunk.js",
+    "static/js/2.1c46a314.chunk.js.map": "/portfolio/static/js/2.1c46a314.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "precache-manifest.4c6502349225e2a1ed711d5d8f3030a5.js": "/portfolio/precache-manifest.4c6502349225e2a1ed711d5d8f3030a5.js",
+    "service-worker.js": "/portfolio/service-worker.js",
+    "static/css/main.3de7adf7.chunk.css.map": "/portfolio/static/css/main.3de7adf7.chunk.css.map",
+    "static/js/2.1c46a314.chunk.js.LICENSE.txt": "/portfolio/static/js/2.1c46a314.chunk.js.LICENSE.txt",
+    "static/media/api.png": "/portfolio/static/media/api.ab84aa00.png",
+    "static/media/burger-builder.png": "/portfolio/static/media/burger-builder.832fd50e.png",
+    "static/media/css3.png": "/portfolio/static/media/css3.a5a9770c.png",
+    "static/media/framework.png": "/portfolio/static/media/framework.dcda2df6.png",
+    "static/media/html5.png": "/portfolio/static/media/html5.798e0027.png",
+    "static/media/myphoto.jpg": "/portfolio/static/media/myphoto.a8f62ef5.jpg",
+    "static/media/yelp-camp.png": "/portfolio/static/media/yelp-camp.589749db.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.255623fe.js",
+    "static/js/2.1c46a314.chunk.js",
+    "static/css/main.3de7adf7.chunk.css",
+    "static/js/main.807fb488.chunk.js"
+  ]
+}
